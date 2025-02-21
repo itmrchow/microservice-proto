@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option go_package = ".;account";
+package account.v2;
+
+message GetUserRequest {
+    string id = 1;
+}
+
+message GetUserResponse {
+    string id = 1;
+    string user_name = 2;
+}
